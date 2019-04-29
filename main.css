@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#login-signup-text {
+    text-align: center;
+    height: 20px;
+    padding: .5em;
+}
+
+#nav-section {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; 
+}
