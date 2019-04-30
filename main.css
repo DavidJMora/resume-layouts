@@ -1,6 +1,18 @@
+html, body {
+    margin: 0;
+    background-color: #347fc3;
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px solid white;
+    height: 4em;
+    margin-bottom: .5em;
 }
 
 #login-signup-text {
@@ -15,28 +27,58 @@ header {
 }
 
 .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
     width: 25%;
+    height: 4em;
     padding-top: 3%;
+    border: none;
+    /* padding-bottom: 3em; */
+    color: white;
+    background-color: #347fc3;
 }
 
-html, body {
-    background: #347fc3;
-    width: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
+.button-text {
+    height: auto;
+    width: auto;
+    margin-top: -.01em
+}
+
+.divider {
+    border-left: 1px solid white;
+}
+
+#profile {
+    margin-top: .5em;
+    height: auto;
+    width: 100vw;
+    /* border: 1px solid white; */
+}
+
+.profile-pic {
+    height: auto;
+    width: 35%;
+}
+
+
+
+
+
+
   
-  .bar {
+.bar {
     position: relative;
     height: 2px;
     width: 500px;
     margin: 0 auto;
     background: #fff;
     margin-top: 150px;
-  }
+} 
   
-  .circle {
+.circle {
     position: absolute;
     top: -30px;
     margin-left: -30px;
@@ -46,9 +88,9 @@ html, body {
     background: #fff;
     border-radius: 30%;
     -webkit-animation: move 5s infinite;
-  }
+}
   
-  #loading-icon {
+#loading-icon {
     position: absolute;
     top: -35px;
     right: -85px;
@@ -56,11 +98,11 @@ html, body {
     color: #347fc3;
     font-family: helvetica, sans-serif;
     font-weight: bold;
-  }
+}
   
-  @-webkit-keyframes move {
+@-webkit-keyframes move {
     0% {left: 0;}
     50% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
     75% {left: 100%; -webkit-transform: rotate(450deg); width: 150px; height: 150px;}
     100% {right: 100%;}
-  }
+}
