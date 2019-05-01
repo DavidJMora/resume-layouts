@@ -15,3 +15,8 @@ function init () {
     document.querySelector('#why-not-button')
         .addEventListener('click', boom);
 }
+
+function populateHTML() {
+    document.querySelector('#name').innerText = data.profile.name;
+    document.querySelector('#biography').innerText = data.profile.bio;
+}

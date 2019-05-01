@@ -15,10 +15,15 @@ header {
     margin-bottom: .5em;
 }
 
+.header-text {
+    color: white;
+}
+
 #login-signup-text {
     text-align: center;
     height: 20px;
     padding: .5em;
+    font-size: .7em;
 }
 
 #nav-section {
@@ -60,9 +65,20 @@ header {
 
 .profile-pic {
     height: auto;
-    width: 35%;
+    width: 50%;
+    float: right;
 }
 
+.body-text {
+    color: white;
+}
+
+@media screen and (min-width: 600px) {
+    .app {
+        ;
+    }
+
+}
 
 
 
